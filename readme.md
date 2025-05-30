@@ -148,3 +148,10 @@ python3 -m pip install -r requirements.txt
 uvicorn src.vpp.main:app --reload
 streamlit run app.py
 ```
+# 🔋 Virtual Power Plant Dashboard
+
+Below is a preview of our Streamlit UI after registering a couple of plants:
+
+![VPP Dashboard Screenshot](assets/dashboard_example1.png)
+![VPP Dashboard Screenshot](assets/dashboard_example1.2.png)
+
