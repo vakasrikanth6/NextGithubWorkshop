@@ -152,6 +152,6 @@ streamlit run app.py
 
 Below is a preview of our Streamlit UI after registering a couple of plants:
 
-![VPP Dashboard Screenshot](assets/dashboard_example1.png)
-![VPP Dashboard Screenshot](assets/dashboard_example1.2.png)
+![VPP Dashboard Screenshot](assets/dashboard-example1.png)
+![VPP Dashboard Screenshot](assets/dashboard-example1.2.png)
 
