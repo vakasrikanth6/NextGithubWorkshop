@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+pydantic
+numpy
+pandas
+pytest
+httpx
+streamlit
+altair
+flake8
+flake8-docstrings
+flake8-import-order
+flake8-bugbear
+black
+isort
