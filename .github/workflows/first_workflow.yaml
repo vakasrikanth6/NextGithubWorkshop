@@ -33,7 +33,14 @@ jobs:
               run: make lint
 
             - name: Run tests
-              run: pytest --maxfail=1 --disable-warnings -q
+              run: pytest --junitxml=tests/output/results.xml
+
+            - name: upload test results
+              if: success() && github.event_name == 'push'
+              uses: actions/upload-artifact@v4
+              with:
+                name: test-results
+                path: ./tests/output/
 
     second_test:
         runs-on: ubuntu-latest
