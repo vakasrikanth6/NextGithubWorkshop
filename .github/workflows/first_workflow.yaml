@@ -13,7 +13,7 @@ on:
     # workflow_dispatch:              ####### to manually trigger from Gitlab UI
 jobs:
     first_test:
-        runs-on: self-hosted
+        runs-on: ubuntu-latest
 
         steps:
             - name: Action checkout
