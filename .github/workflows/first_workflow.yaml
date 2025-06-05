@@ -1,0 +1,29 @@
+name: Let's go
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+jobs:
+    first_test:
+        runs-on: ubunut-latest
+
+        steps:
+            - name: Action checkout
+              uses: actions/checkout@v4
+
+            - name: install python
+              uses: actions/setup-python@v4
+              with:
+                python-version: '3.10'
+
+            - name: Get dependencies
+              run: |
+                python3 -m pip install --upgrade pip
+                pip install -r requirements.txt
+
+            - name: Lint with Flake8
+              run: make lint
+
+            - name: Run tests
+              run: pytest --maxfail=1 --disable-warnings -q
