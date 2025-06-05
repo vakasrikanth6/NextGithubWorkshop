@@ -6,7 +6,7 @@ on:
         branches: [main]
 jobs:
     first_test:
-        runs-on: ubunut-latest
+        runs-on: ubuntu-latest
 
         steps:
             - name: Action checkout
