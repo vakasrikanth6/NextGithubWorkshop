@@ -2,10 +2,10 @@ name: Let's go
 on:
     push:
         branches: [main, deploy]
-        paths:
-            - 'src/**'
-        branches-ignore: [test]
-        paths-ignore: ['docs/**']
+        #paths:
+        #    - 'src/**'
+        #branches-ignore: [test]
+        #paths-ignore: ['docs/**']
     pull_request:
         branches: [main]
     # schedule:
