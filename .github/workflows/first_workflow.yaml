@@ -2,6 +2,8 @@ name: Let's go
 on:
     push:
         branches: [main]
+    pull_request:
+        branches: [main]
 jobs:
     first_test:
         runs-on: ubunut-latest
