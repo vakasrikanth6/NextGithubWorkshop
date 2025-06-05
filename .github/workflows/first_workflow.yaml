@@ -1,9 +1,16 @@
 name: Let's go
 on:
     push:
-        branches: [main]
+        branches: [main, deploy]
+        paths:
+            - 'src/**'
+        branches-ignore: [test]
+        paths-ignore: ['docs/**']
     pull_request:
         branches: [main]
+    schedule:
+        - cron: '0 2 * * *'         ##### Cronjob
+    # workflow_dispatch:              ####### to manually trigger from Gitlab UI
 jobs:
     first_test:
         runs-on: ubuntu-latest
