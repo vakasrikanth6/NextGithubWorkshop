@@ -1,11 +1,8 @@
 """Streamlit dashboard for the Virtual Power Plant (VPP) project."""
 
 import altair as alt
-
 import pandas as pd
-
 import requests
-
 import streamlit as st
 
 API_BASE = "http://localhost:8000"
