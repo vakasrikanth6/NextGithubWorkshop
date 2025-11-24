@@ -17,7 +17,7 @@ jobs:
 
         steps:
             - name: Action checkout
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
 
             - name: install python
               uses: ./.github/actions/setup-python-env
@@ -48,4 +48,4 @@ jobs:
         needs: first_test
         steps:
             - name: checkout code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v6
